@@ -1,3 +1,8 @@
+> I didn't know how Leetcode passes LinkedList to function argument. So, I
+> assumed that arguments will be simple arrays. Later, realized I was wrong.
+> Since my approach was correct, I didn't bother to rewrite it using LinkedList.
+> And did not submit it either.
+
 # [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 
 > Medium
