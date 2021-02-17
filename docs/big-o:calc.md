@@ -1,5 +1,5 @@
 ---
-title: What is Good Code
+title: Big O
 ---
 
 A codebase would be called as "good" if it has following properties
@@ -73,16 +73,15 @@ Big O Notation allows us to make code scalable
 
 ## the Big O chart
 
-![https://i.ibb.co/8MmVFNw/2021-02-17-12-35-55.png]()
-
+![https://i.ibb.co/8MmVFNw/2021-02-17-12-35-55.png](https://i.ibb.co/8MmVFNw/2021-02-17-12-35-55.png)
 
 > [Big O cheatsheet](https://www.bigocheatsheet.com/)
 
 ## Space Complexity
 
-things that are responsible for space complexities: 
+things that are responsible for space complexities:
 
-- Variables 
+- Variables
 - Data Structures
 - Function Calls
 - Allocations
