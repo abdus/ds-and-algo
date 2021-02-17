@@ -17,8 +17,8 @@
   <body>
     <div class="wrapper">
       <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        {% if site.description or site.github.project_tagline %}
+        <h1>{{ page.title | default: site.github.repository_name }}</h1>
+        {% if page.description or site.description or site.github.project_tagline %}
           <p>{{ site.description | default: site.github.project_tagline }}</p>
         {% endif %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
@@ -31,8 +31,6 @@
         </ul>
       </header>
       <section>
-
-      <h3 style="margin: 2rem 0">{{ page.title }}</h3>
 
       {{ content }}
 
