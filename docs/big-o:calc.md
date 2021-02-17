@@ -6,6 +6,8 @@ A codebase would be called as "good" if it has following properties
 
 - Readable
 - Scalable
+  - Time and Speed
+  - Memory
 
 Big O Notation allows us to make code scalable
 
@@ -50,3 +52,37 @@ Big O Notation allows us to make code scalable
 
    The Big O for this function would be `O(m * n)`. (note that when the loops
    are nested, multiplication should be used instead of addition)
+
+4. drop non-dominant names: when a codeblock is not dominant, it can be dropped.
+   look at the following code snippet for a demo.
+
+   ```ts
+   function demo(input1: string[], input2: string[]): void {
+     for (let i of input1) {
+       // this can be dropped from Big O calc;
+       console.log(i);
+     }
+
+     for (let i of input1) {
+       for (let j of input2) {
+         console.log(i, j);
+       }
+     }
+   }
+   ```
+
+## the Big O chart
+
+![https://i.ibb.co/8MmVFNw/2021-02-17-12-35-55.png]()
+
+
+> [Big O cheatsheet](https://www.bigocheatsheet.com/)
+
+## Space Complexity
+
+things that are responsible for space complexities: 
+
+- Variables 
+- Data Structures
+- Function Calls
+- Allocations
